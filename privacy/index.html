@@ -37,7 +37,7 @@
         <ul>
           <li>Google account email and account identifiers to identify the connected Google account.</li>
           <li>Google Contacts data to import contacts into ContactsFreeShare and upload user-approved contact edits back to Google Contacts.</li>
-          <li>Google Drive access to create, read, update, move, and delete files and folders used by ContactsFreeShare for shared app data, app settings, meeting data, field list layouts, address book PDFs, backup files, editor lock data, and app revision data.</li>
+          <li>Limited Google Drive file access to create, read, update, move, and delete ContactsFreeShare-created files and folders, and files or folders the user explicitly selects or provides to the app, for shared app data, app settings, meeting data, field list layouts, address book PDFs, backup files, editor lock data, and app revision data.</li>
           <li>Local app data stored on the user's computer, including contacts, meetings, field lists, PDF output, settings, logs, and uploaded contact photos.</li>
         </ul>
       </section>
@@ -47,25 +47,24 @@
         <p>
           ContactsFreeShare uses Google data only to provide user-facing app features selected by the
           user or app administrator. Google Contacts data is used for contact import and contact update
-          workflows. Google Drive file access is used to create, read, update, and delete
-          ContactsFreeShare files and folders needed for shared app data, backups, PDF output, and
-          editor coordination.
+          workflows. Limited Google Drive file access is used to create, read, update, and delete
+          ContactsFreeShare-created files and folders, and user-selected files or folders, needed
+          for shared app data, backups, PDF output, and editor coordination.
         </p>
       </section>
 
       <section>
         <h2>Google Drive Access Scope</h2>
         <p>
-          ContactsFreeShare requests Google Drive access that can manage files in the connected
-          Google Drive account. This access is used so the app can create and maintain its
-          ContactsFreeShare folder structure, sync shared app files, save generated PDFs and backups,
-          manage editor lock files, and clean up ContactsFreeShare PDF files when Google Drive moves
-          them outside the app folder after another shared user removes them.
+          ContactsFreeShare requests limited Google Drive file access. This access is used so the
+          app can create and maintain its ContactsFreeShare folder structure, sync shared app files,
+          save generated PDFs and backups, manage editor lock files, and work with files or folders
+          the user explicitly selects or provides to the app.
         </p>
         <p>
           ContactsFreeShare does not use Drive access to review, collect, or share unrelated Google
-          Drive content. The app limits its Drive operations to ContactsFreeShare folders and files,
-          app-created files, and folders or file IDs that the user provides in app settings.
+          Drive content. The app limits its Drive operations to ContactsFreeShare-created folders and
+          files, app-created files, and folders or file IDs that the user provides in app settings.
         </p>
       </section>
 
@@ -102,7 +101,7 @@
           Google user data is shared, transferred, or disclosed only in these limited cases:
         </p>
         <ul>
-          <li>To Google services, through Google's APIs, when the app imports contacts, updates contacts, saves files to Google Drive, reads app files from Google Drive, or deletes app-created Drive files at the user's direction.</li>
+          <li>To Google services, through Google's APIs, when the app imports contacts, updates contacts, saves files to Google Drive, reads app-created or user-selected app files from Google Drive, or deletes app-created Drive files at the user's direction.</li>
           <li>To other users or editors who already have access to the same Google Drive folders, shared folders, or Google Contacts account selected by the user or app administrator.</li>
           <li>To the user's own computer and browser so the local ContactsFreeShare app can display, edit, print, export, or save the user's contacts, field lists, address books, PDFs, settings, and logs.</li>
           <li>When required by law or necessary to protect the security, integrity, or legal rights of ContactsFreeShare or its users.</li>
@@ -137,7 +136,7 @@
           <li>Google OAuth tokens and local app data are stored on the user's computer in the ContactsFreeShare app data folder, not in a public ContactsFreeShare cloud database.</li>
           <li>Shared app files are stored in Google Drive folders controlled by the connected Google account and protected by Google account permissions.</li>
           <li>Editor access is controlled by the app's editor sign-in flow and editor lock file to reduce conflicting edits in multi-editor use.</li>
-          <li>ContactsFreeShare limits Drive operations to ContactsFreeShare folders and files, app-created files, and folder or file IDs provided by the user in app settings.</li>
+          <li>ContactsFreeShare limits Drive operations to ContactsFreeShare-created folders and files, app-created files, and folder or file IDs provided by the user in app settings.</li>
           <li>Users can revoke Google access at any time from their Google Account security settings or disconnect Google from the app.</li>
         </ul>
         <p>
