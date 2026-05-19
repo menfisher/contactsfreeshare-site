@@ -23,7 +23,7 @@
 
     <main class="policy-page">
       <h1>Privacy Policy</h1>
-      <p class="effective-date">Effective date: May 16, 2026</p>
+      <p class="effective-date">Effective date: May 19, 2026</p>
 
       <p>
         ContactsFreeShare is a local desktop web app for maintaining a shared contact directory,
@@ -35,7 +35,7 @@
         <h2>Information ContactsFreeShare Uses</h2>
         <p>Depending on which features are enabled, ContactsFreeShare may use:</p>
         <ul>
-          <li>Google profile and email information to identify the connected Google account.</li>
+          <li>Google account email and account identifiers to identify the connected Google account.</li>
           <li>Google Contacts data to import contacts into ContactsFreeShare and upload user-approved contact edits back to Google Contacts.</li>
           <li>Google Drive access to create, read, update, move, and delete files and folders used by ContactsFreeShare for shared app data, app settings, meeting data, field list layouts, address book PDFs, backup files, editor lock data, and app revision data.</li>
           <li>Local app data stored on the user's computer, including contacts, meetings, field lists, PDF output, settings, logs, and uploaded contact photos.</li>
@@ -94,9 +94,22 @@
       <section>
         <h2>Data Sharing</h2>
         <p>
-          ContactsFreeShare does not sell or rent user data. Shared app data may be visible to other
-          users or editors who have access to the same Google Drive files or folders used by the
-          ContactsFreeShare installation.
+          ContactsFreeShare does not sell, rent, or trade Google user data. ContactsFreeShare does
+          not disclose Google user data to advertising networks, data brokers, analytics providers,
+          unrelated third parties, or artificial intelligence model training services.
+        </p>
+        <p>
+          Google user data is shared, transferred, or disclosed only in these limited cases:
+        </p>
+        <ul>
+          <li>To Google services, through Google's APIs, when the app imports contacts, updates contacts, saves files to Google Drive, reads app files from Google Drive, or deletes app-created Drive files at the user's direction.</li>
+          <li>To other users or editors who already have access to the same Google Drive folders, shared folders, or Google Contacts account selected by the user or app administrator.</li>
+          <li>To the user's own computer and browser so the local ContactsFreeShare app can display, edit, print, export, or save the user's contacts, field lists, address books, PDFs, settings, and logs.</li>
+          <li>When required by law or necessary to protect the security, integrity, or legal rights of ContactsFreeShare or its users.</li>
+        </ul>
+        <p>
+          ContactsFreeShare does not operate a separate third-party server that receives or stores
+          Google Contacts data or Google Drive file contents.
         </p>
       </section>
 
@@ -112,11 +125,24 @@
       </section>
 
       <section>
-        <h2>Security</h2>
+        <h2>Data Protection And Security</h2>
         <p>
-          ContactsFreeShare uses Google OAuth to request access to Google data. Users should only
-          install ContactsFreeShare from a trusted source and should keep their computer, browser,
-          and Google account protected.
+          ContactsFreeShare treats Google Contacts data, Google Drive files, contact photos, editor
+          credentials, and shared app files as sensitive data. The app uses the following protection
+          mechanisms:
+        </p>
+        <ul>
+          <li>Google OAuth is used for authorization. ContactsFreeShare does not ask users for their Google password.</li>
+          <li>Google API requests are sent over HTTPS/TLS.</li>
+          <li>Google OAuth tokens and local app data are stored on the user's computer in the ContactsFreeShare app data folder, not in a public ContactsFreeShare cloud database.</li>
+          <li>Shared app files are stored in Google Drive folders controlled by the connected Google account and protected by Google account permissions.</li>
+          <li>Editor access is controlled by the app's editor sign-in flow and editor lock file to reduce conflicting edits in multi-editor use.</li>
+          <li>ContactsFreeShare limits Drive operations to ContactsFreeShare folders and files, app-created files, and folder or file IDs provided by the user in app settings.</li>
+          <li>Users can revoke Google access at any time from their Google Account security settings or disconnect Google from the app.</li>
+        </ul>
+        <p>
+          Users should install ContactsFreeShare only from a trusted source and should keep their
+          computer, browser, operating system, and Google account protected.
         </p>
       </section>
 
